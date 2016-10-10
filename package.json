@@ -1,0 +1,28 @@
+{
+  "name": "docker_node_mongo_driver_test",
+  "version": "1.0.0",
+  "description": "This is a project that test mongo driver node app.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ZackLeonardo@github.com/ZackLeonardo/docker_node_mongoDriverTest.git"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "mongo"
+  ],
+  "author": "zoudeyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZackLeonardo/docker_node_mongoDriverTest/issues"
+  },
+  "homepage": "https://github.com/ZackLeonardo/docker_node_mongoDriverTest#readme",
+  "dependencies": {
+    "mongodb": "^2.2.10"
+  }
+}
