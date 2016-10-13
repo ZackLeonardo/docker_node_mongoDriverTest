@@ -28,8 +28,8 @@ mongodb.MongoClient.connect(uri, function(error, db) {
 
   var bucket = new mongodb.GridFSBucket(db);
 
-  fs.createReadStream('./RainMood.mp3').
-    pipe(bucket.openUploadStream('RainMood.mp3')).
+  fs.createReadStream('./RainyMood.mp3').
+    pipe(bucket.openUploadStream('RainyMood.mp3')).
     on('error', (error) => {
       assert.ifError(error);
     }).
