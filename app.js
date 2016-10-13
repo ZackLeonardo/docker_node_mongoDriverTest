@@ -23,7 +23,7 @@ var mongodb = require('mongodb');
 
 var uri = 'mongodb://localhost:27017/test';
 
-mongodb.MongoClient.connect(rui, function(error, db) {
+mongodb.MongoClient.connect(uri, function(error, db) {
   assert.ifError(error);
 
   var bucket = new mongodb.GridFSBucket(db);
