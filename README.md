@@ -8,10 +8,11 @@ This is a project that test mongo driver node app.
 
 docker build -t maiz9088/node-mongodriver-app .
 
-if [docker ps -a | grep node-mongodriverApp != ""];
-then
+#CONTAINERID=$(docker ps -a | grep node-mongodriverApp)
+
+#if [ -z "$CONTAINERID" ]; then
   docker rm node-mongodriverApp
-fi
+#fi
 
 docker run --name node-mongodriverApp --link mongodb:myMongoDB -d maiz9088/node-mongodriver-app
 
