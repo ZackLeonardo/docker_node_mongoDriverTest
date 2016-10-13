@@ -21,7 +21,7 @@ var assert = require('assert');
 var fs = require('fs');
 var mongodb = require('mongodb');
 
-var uri = 'mongodb://localhost:27017/test';
+var uri = 'mongodb://myMongoDB:27017/test';
 
 mongodb.MongoClient.connect(uri, function(error, db) {
   assert.ifError(error);
